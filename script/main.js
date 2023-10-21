@@ -11,7 +11,7 @@ document.addEventListener("mousemove", (e)=>{
   let x = e.clientX - centerX,
       y = e.clientY - centerY,
       theta = Math.atan2(y,x),
-      angle = theta*180/Math.PI + 360;
+      angle = theta*180/Math.PI + 360+1;
   
   
   pupil.style.transform = `translateX(${R - r +"px"}) rotate(${angle + "deg"})`;

@@ -5,19 +5,25 @@
     box-sizing:border-box;
 }
 body{
-    background: #ac1f1f;
+    background: #4e77ad;
     color: aliceblue;
 }
+
 #header{
     width: 94%;  /* size of the top row*/
     height: 100vh;
+    
+    /* display: inline-block; */
     /* background-image: ; no background for now please */
     /* background-size: cover; */
     /* background-position: ; */
 }
 .container{
+
     padding: 10px 10%;
+    /* float: left; */
 }
+
 nav{
     
     display: flex;
@@ -39,15 +45,35 @@ nav ul li{
 nav ul li a{
     color:#fff;
     text-decoration: none;
-    font-size: 18;
+    font-size: 25px;
+    position: relative;
+}
+
+.header-text{
+    display: inline-block;
+    margin-top: 10%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-text p span{
+    color: rgb(235, 236, 241);
+}
+.imageheader{
+    vertical-align:top;
+    display: inline-block;
+    padding: 10px 10%;
+    /* float: left; */
 }
 
 .eye{
     margin: auto;
-  /*   background:#ccc; */
+    /* background:#0a632c; */
   }
   .pupil{
     position:relative;
-  /*   transform:  rotate(390deg); */
-  /*   transform-origin: 20px center; */
+    /* transform:  rotate(390deg); */
+    transform-origin: 20px center;
   }
