@@ -44,6 +44,8 @@ nav{
 }
 .logo{
     width:  140px;
+    padding-left: 40px;
+    padding-top: 40px;
 }
 
 nav ul li{
@@ -231,7 +233,17 @@ nav ul li a{
     height: 60px;
     margin: 10px;
     display: inline-block;
-    background: #00CC99;
+    /* background: #ffffff; */
+    
+  }
+
+  .block:hover {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    display: inline-block;
+    /* background: #ffffff; */
+    filter: invert(46%) sepia(80%) saturate(371%) hue-rotate(166deg) brightness(97%) contrast(83%);
   }
 
   .about-col-2 img{
