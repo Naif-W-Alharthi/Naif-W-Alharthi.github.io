@@ -1,2 +1,2 @@
-# TheNaif-Alharthi.github.io
+# Naif-W-Alharthi.github.io
 Website portoflio
