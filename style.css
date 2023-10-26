@@ -46,11 +46,14 @@ nav{
     width:  140px;
     padding-left: 40px;
     padding-top: 40px;
+    transition: scale 2s ease-in-out, transform 2s ;
 }
 
 
 .logo:hover {
-    background-color: aqua;
+    /* transform: translate(20px,20px); */
+    scale: 2;
+    transform: translate(200px,40px)  rotate(36000deg);
 }
 
 nav ul li{
@@ -183,7 +186,7 @@ nav ul li a{
 .imageheader{
     /* vertical-align:top; */
     display: inline-block;
-    padding: 10px 10%;
+    /* padding: 10px 10%; */
     width:  600px;
     
     /* float: left; */
@@ -240,6 +243,7 @@ nav ul li a{
     height: 60px;
     margin: 10px;
     display: inline-block;
+    transition: scale 0.4s ease-in-out
     /* background: #ffffff; */
   }
 
@@ -248,8 +252,9 @@ nav ul li a{
     height: 60px;
     margin: 10px;
     display: inline-block;
+    scale: 1.4;
     /* background: #ffffff; */
-    filter: invert(46%) sepia(80%) saturate(371%) hue-rotate(166deg) brightness(97%) contrast(83%);
+    filter: invert(100%) sepia(80%) saturate(371%) hue-rotate(90deg) brightness(100%) contrast(83%);
   }
 
   .about-col-2 img{
