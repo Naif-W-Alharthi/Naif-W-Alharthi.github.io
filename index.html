@@ -214,19 +214,19 @@
         #lens {
     /* opacity: 0;
     transform: translateY(100%); */
-    animation: FadeinUp 5s  cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite;
+    animation: FadeinUp 20s  cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite;
     /* transition: opacity 2s cubic-bezier(0.215, 0.610, 0.355, 1.000),
                 transform 2s cubic-bezier(0.215, 0.610, 0.355, 1.000); */
 }
 #glassesframe{
-    animation: FadeinDown 5s cubic-bezier(0.215, 1.610, 0.355, 1.000) infinite;
+    animation: FadeinDown 20s cubic-bezier(0.215, 1.610, 0.355, 1.000) infinite;
 }
 @keyframes FadeinUp {
-    from {
+    0% {
         /* opacity: 0; */
         transform: translateY(100%);
     }
-    to {
+    25% {
         /* opacity: 1; */
         transform: translateY(0);
     }
@@ -234,44 +234,73 @@
 }
 
 @keyframes FadeinDown {
-    from {
+    0% {
         /* opacity: 0; */
         transform: translateY(-100%);
     }
-    to {
+    25% {
         /* opacity: 1; */
         transform: translateY(0);
     }
 }
 #lens2mainbubble{
-    width: 100%; 
-    position: absolute; left: 50%; top: 50%;
-    animation: sizeupleft 5s ease infinite;
+     /* width: 100%;  */
+     opacity: 0;
+      height: 100px;
+        margin: 100px; 
+        position: absolute;
+    position: absolute; left: 50%; top: 50%; 
+    transform-origin: 42% 42%;
+    animation: sizeupleft 20s ease forwards infinite;
 }
 @keyframes sizeupleft {
-    from {
-        /* opacity: 0; */
+    25%  {
+        opacity: 0;
         /* transform-origin: center;
          */
-        
-        transform: (0);
+         /* height: 100px;
+        margin: 100px; */
+        transform: scale(0);
+         
     }
-    to {
-        /* opacity: 1; */
-        
-        transform: scaleX(1);
+    50% {
+        opacity: 1;
+        /* height: 100px; */
+        /* margin: 100px; */
+        transform: scale(1);
     }
-    
+}
+
+#len2subtextbubble{
+    opacity: 0;
+    height: 100px;
+        margin: 100px; 
+        position: absolute;
+   
+    transform-origin: 42% 42%;
+    animation: sizeupleft 20s ease forwards infinite;
+    animation-delay: 2s;
+}
+#lens2subsubbubble{
+
+    opacity: 0;
+    height: 100px;
+        margin: 100px; 
+        position: absolute;
+   
+    transform-origin: 42% 42%;
+    animation: sizeupleft 20s ease forwards infinite;
+    animation-delay: 2.2s;
 }
 
 
 
         #shadow{
-            animation: myanimation 10s infinite;
+            animation: myanimation 20s infinite;
         }
         @keyframes myanimation {
   0% {fill: rgb(49, 56, 143);}
-  25%{fill:rgb(46, 196, 26);}
+  25%{fill:rgb(196, 52, 26);}
   50%{fill:green;}
   75%{fill:rgb(218, 216, 141);}
   100% {fill: rgb(49, 56, 143);}
