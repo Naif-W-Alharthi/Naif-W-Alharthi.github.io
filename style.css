@@ -267,7 +267,7 @@ nav ul li a{
  }
  /* ------------------Work experience----------------- */
  #services{
-    padding: 300px 20px;
+    padding: 150px 20px;
  }
  .services-list{
     display: grid;
@@ -328,8 +328,13 @@ nav ul li a{
 .Education-list div img{
     
     /* display: inline-block; */
+    filter: brightness(100%);
+    /* mix-blend-mode: multiply; */
+    height: 90%;
+    width: 22%;
     margin: 0px 40px;
     float: left;
+    filter: brightness(100%);
  }
 .Education-list div h2{
     font-size: 30px;
