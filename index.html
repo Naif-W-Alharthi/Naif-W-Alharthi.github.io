@@ -158,18 +158,18 @@
                 
                 <div>
                     <h2>Research Volenteer</h2>
-                    <p>Something something something</p>
+                    <p>At Kings College London</p>
                     <a href="#" learn more></a>
                 </div>
 
                 <div>
                     <h2>Web Design</h2>
-                    <p>Something something something</p>
+                    <p>Qaunt (Data science company) </p>
                     <a href="#" learn more></a>
                 </div>
                 <div>
-                    <h2>Web Design</h2>
-                    <p>Something something something</p>
+                    <h2>Hackathon</h2>
+                    <p>By Mircosoft and MAC beauty</p>
                     <a href="#" learn more></a>
                 </div>
 
@@ -319,7 +319,7 @@
     25%{ transform: rotate(-720deg); 
         opacity: 0;
         transform-origin: center center;;}
-    100%{ transform: rotate(360deg); 
+    70%{ transform: rotate(360deg); 
         transform-origin: center center;
         opacity: 1;}
 }
@@ -379,20 +379,70 @@
     animation: FadeinDownred 20s ease forwards infinite;
 }
 #robot-group{
-    
-    offset-path: path("M304.862  132.335 205.626 128.309  122.617C204.45 118.101 204.41 114.178 204.862 110.018Z");
-    -webkit-animation: move 10s infinite alternate ease-in-out;
-    animation: move 10s infinite alternate ease-in-out;
+    /* z-index: 2; */
+    opacity: 0;
+    position: absolute;
+    animation: move 20s ease forwards alternate infinite;
 }
 
 @keyframes move {
-    0% {
-        offset-distance: 0%;
+    30% {
+        opacity: 0;
+        transform: translate(9%,4%);
+        /* transform: translateY(0%); */
+        
     }
-    100% {
-        offset-distance: 100%;
+    50% {
+        /* opacity: 0; */
+        opacity: 1;
+        transform: translate(0%,0%);
+        /* transform: translateY(0%); */
+        
     }
+  
 }
+
+@keyframes rotatekinda {
+    30% {
+        opacity: 1;
+        /* transform-box: fill-box; */
+
+        transform: translateY(2%);
+        
+    }
+    40% {
+        /* opacity: 0; */
+        opacity: 1;
+        /* transform-box: fill-box; */
+   
+        transform: translateY(0%);
+        
+    }
+    60% {
+        /* opacity: 0; */
+        opacity: 1;
+        /* transform-box: fill-box; */
+   
+        transform: translate(-1%,-2%);
+        
+    }
+  
+  
+}
+
+
+/* #robolens{
+    
+    animation: rotatekinda 20s ease forwards infinite;
+} */
+
+#roboeye{
+    opacity: 0;
+    animation: rotatekinda 20s ease forwards infinite;
+
+}
+
+
 
 @-webkit-keyframes move {
     0% {
