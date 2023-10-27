@@ -163,10 +163,12 @@ nav ul li a{
 }
 .about-col-1-header img{
    width: 100%;
+   
    border-radius: 15px;
 }
 
 .about-col-2-header{
+    
     flex-basis: 50%;
     
 }
@@ -191,6 +193,7 @@ nav ul li a{
     
     /* float: left; */
 }
+
 
 .eye{
     margin: auto;
@@ -254,7 +257,7 @@ nav ul li a{
     display: inline-block;
     scale: 1.4;
     /* background: #ffffff; */
-    filter: invert(100%) sepia(80%) saturate(371%) hue-rotate(90deg) brightness(100%) contrast(83%);
+    filter: invert(100%) sepia(80%) saturate(371%) hue-rotate(90deg)  contrast(100%);
   }
 
   .about-col-2 img{
