@@ -9,12 +9,16 @@
     <link rel="stylesheet" href="style.css">
     
 </head>
+
 <body>
+<section>
     
     <div id="header">
         
         <div class="container-header">
+            
             <nav>
+                <div class="space layer1"></div>
                 <img src="svg/logo.svg" class="logo">
                 
                 <ul>
@@ -27,6 +31,7 @@
                 </ul>
             </nav>
             <div class="header-text">
+                
                 <!-- <p> The quick brown <span style="font-size: 20px">fox</span> jumps over...</p> -->
                 <h1>Hi, I am <span>Naif Alharthi</span><br></h1>
                 <p> <span>Machine learning researcher 2nd year of my bachelor's degree in data science <br> experienced in Python/C# 2D and 3D art</span></p>
@@ -74,11 +79,7 @@
           <circle cx="50" cy="50" r="30" fill="#0D0D20" class="pupil" />
         </svg> -->
         <!-- <object type="image/svg+xml" data="Basic Animations.svg"></object> -->
-        <style>
 
-
-
-        </style>
         <svg width="500" height="300" viewBox="0 0 390 204" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="Frame 1">
             <!-- <rect width="416" height="204" fill="white"/> -->
@@ -116,7 +117,13 @@
           </svg> -->
           
     </div>
+</section>
     <!-- ------------------skills----------------- -->
+    
+    
+
+    <div class="space layer2"></div>
+    <div class="space layer3"></div>
     <div id="about">
         <div class="container">
             
@@ -151,6 +158,7 @@
         </div>
     </div>
     <!-- ------------------Work Experience----------------- -->
+    <div class="space layer4"></div>
     <div id="services">
         <div class="container">
             <h1 class="sub-title">Experiences</h1>
@@ -180,6 +188,7 @@
     </div>
 
         <!-- ------------------ Education ----------------- -->
+        <div class="space layer5"></div>
         <div id="Education">
             <div class="container">
                 <h1 class="sub-title">Education</h1>
@@ -209,7 +218,7 @@
 
 
 
-
+        <div class="space1 layer6"></div>
         <div id="Research">
             
         
@@ -238,7 +247,7 @@
 
 
 
-
+         <div class="space layer7"></div>
          <div id="Projects">
             <div class="container">
                 <h1 class="sub-title">Projects</h1>
@@ -249,7 +258,7 @@
                         <h2>Blindfold</h2>
                         </a>
                         <p>A python program that preforms a adversarial attacks on an image selected when right-clicked only works on windows </p>
-                        <a  style="text-decoration:none " href="https://www.linkedin.com/in/naif-wasel-alharthi/"> <p> video show</p> </a>
+                        <!-- <a  style="text-decoration:none " href="https://www.linkedin.com/in/naif-wasel-alharthi/"> <p> video show</p> </a> -->
                     </div>
     
                     <div>
@@ -383,7 +392,7 @@
         transform-origin: center center;
         opacity: 1;}
 }
-        #shadow{
+        #shadow{s
             animation: myanimation 20s infinite;
         }
         @keyframes myanimation {
@@ -511,6 +520,83 @@
     100% {
         offset-distance: 100%;
     }
+}
+.space {
+    position: absolute;
+    aspect-ratio: 900 / 300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    translate: 0px 100px;
+    z-index: -1;
+    /* background-image: url(./svg/layered-waves-haikei.svg); */
+    
+}
+
+.layer1 {
+    /* z-index: 10; */
+    background-image: url(./svg/layered-waves-haikei.svg);
+}
+
+
+.layer2 {
+    /* z-index: 10; */
+    background-image: url(./svg/layer1.svg);
+    translate: 0px -700px;
+    z-index: -1;
+}
+
+.layer3 {
+    /* z-index: 10; */
+    background-image: url(./svg/stacked-steps-haikei.svg);
+    /* translate: 0px ; */
+    height: 100%;
+    z-index: -1;
+}
+.layer4 {
+    /* z-index: 10; */
+    background-image: url(./svg/stacked-peaks-haikei.svg);
+    /* translate: 0px ; */
+    height: 100%;
+    z-index: -1;
+}
+.layer5 {
+    /* z-index: 10; */
+    background-image: url(./svg/low-poly-grid-haikei.svg);
+    /* translate: 0px ; */
+    height: 100%;
+    z-index: -1;
+}
+
+.space1 {
+    position: absolute;
+    /* aspect-ratio: 900 / 300; */
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    translate: 0px 30px;
+    z-index: -1;
+    
+    /* background-image: url(./svg/layered-waves-haikei.svg); */
+    
+}
+.layer6 {
+    /* z-index: 10; */
+    
+    background-image: url(./svg/blob-scene-haikei2.svg);
+    /* translate: 0px ; */
+    height: 100%;
+    z-index: -1;
+}
+
+.layer7 {
+    /* z-index: 10; */
+    background-image: url(./svg/circle-scatter-haikei.svg);
+    /* translate: 0px ; */
+    height: 100%;
+    z-index: -1;
 }
 
     </style>

@@ -5,7 +5,7 @@
     box-sizing:border-box;
 }
 body{
-    background: #807d7e;
+    background: rgb(135, 135, 139);
     color: #f5f3f3;
 }
 
@@ -43,6 +43,7 @@ nav{
     flex-wrap: wrap;
 }
 .logo{
+
     min-width: 10%;
     min-height: 10%;
     max-width: 12%;
@@ -50,6 +51,7 @@ nav{
     padding-left: 1%;
     padding-top: 1%;
     transition: scale 2s ease-in-out, transform 2s ;
+    /* z-index: 10; */
 }
 
 
@@ -208,11 +210,15 @@ nav ul li a{
     transform-origin: 20px center;
   }
 /* ------------------skills----------------- */
+
+
+
+
 #about{
     
     flex-grow: 0;
     flex-shrink: 0;
-    padding: 300px 0;
+    padding: 1% 0;
     color:rgb(0, 0, 0);
     
     
@@ -279,7 +285,7 @@ nav ul li a{
     grid-gap: 100px;
  }
 .services-list div{
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.678);
     width: 300px;
     height: 300px;
     padding: 50px;
@@ -297,12 +303,12 @@ nav ul li a{
 
 
 .services-list div:hover{
-    background: #5800cc;
+    background: #5c7dcaef;
     transform: translateY(-10px);
 }
 /* ------------------Education----------------- */
 #Education{
-    padding: 300px 0;
+    padding: 100px 0;
   
  }
  .Education-list{
@@ -423,7 +429,7 @@ nav ul li a{
     grid-gap: 250px;
  }
 .services-list_reasearch div{
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.623);
     width: 400px;
     height: 400px;
     padding: 50px;
@@ -437,10 +443,11 @@ nav ul li a{
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 20px;
+    color: whitesmoke;
 }
 
 
 .services-list_reasearch div:hover{
-    background: #5800cc;
+    background: #80a774a1;
     transform: translateY(-10px);
 }
