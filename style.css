@@ -21,19 +21,19 @@ body{
     /* background-position: ; */
 }
 .container{
-    padding: 10px 7%;
+    padding:  7%;
     max-width: 100%; /* Set the maximum width of the div */
     margin: 0 auto;
     /* overflow:hidden */
 }
-.container-header{
+/* .container-header{ */
     
     /* padding: 10px 7%; */
     /* float: left; */
     /* width:100%; Adjust the width as needed
     height: 00%; /* Adjust the height as needed */
-    overflow: hidden;
-} 
+    /* overflow: hidden; */
+/* }  */
 
 nav{
     
@@ -43,9 +43,12 @@ nav{
     flex-wrap: wrap;
 }
 .logo{
-    width:  140px;
-    padding-left: 40px;
-    padding-top: 40px;
+    min-width: 10%;
+    min-height: 10%;
+    max-width: 12%;
+    max-height: 12%;
+    padding-left: 1%;
+    padding-top: 1%;
     transition: scale 2s ease-in-out, transform 2s ;
 }
 
@@ -385,14 +388,7 @@ nav ul li a{
 
 }
 
-.container-research  img{
-    background-color:#fff ;
-    float: top;
-    width:  600px;
-    height: 300px;
-    
 
-}
 
 
 .container-research div img{
@@ -403,6 +399,10 @@ nav ul li a{
     
 
 }
+.container-research  div {
+    font-size: 25px;
+  }
+
 .container-research p {
     font-size: 30px;
   }
