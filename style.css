@@ -5,12 +5,20 @@
     box-sizing:border-box;
 }
 body{
-    background: #87878b;
+    /* background: #87878b; */
+    position: absolute;
+    /* aspect-ratio: 900 / 300; */
+    /* background-size: 100%; */
+    background-image: url(./svg/bb500by500.svg);
+    background-size: cover;
+    background-repeat: repeat-y;
+    /* background-position: center; */
     color: #f5f3f3;
 }
 
+
 #header{
-    width: 100vh;  /* size of the top row*/
+    width: 100vw;  /* size of the top row*/
     height: 100vh;
     /* overflow:hidden */
     max-width: 100%; 
@@ -20,10 +28,11 @@ body{
     /* background-size: cover; */
     /* background-position: ; */
 }
+
 .container{
     padding:  7%;
     max-width: 100%; /* Set the maximum width of the div */
-    margin: 10% auto;
+    margin: 10%;
     /* overflow:hidden */
 }
 /* .container-header{ */
@@ -71,8 +80,18 @@ nav ul li{
 nav ul li a{
     color:#fff;
     text-decoration: none;
-    font-size: 25px;
+    /* font-size: 25px; */
+    font-size: 300%;
     position: relative;
+}
+@media (min-width:900px) {
+    nav ul li a{
+        color:#fff;
+        text-decoration: none;
+        /* font-size: 25px; */
+        font-size: 25px; 
+        position: relative;
+}
 }
 
 .header-text{
@@ -80,6 +99,14 @@ nav ul li a{
     padding: 10px 7%;
     margin-top: 10%;
     font-size: 30px;
+}
+@media (min-width:900px) {
+    .header-text{
+        display: inline-block;
+        padding: 10px 7%;
+        margin-top: 10%;
+        font-size: 30px;
+    }
 }
 .block-header img{
     display: inline-block;
@@ -381,7 +408,7 @@ nav ul li a{
 /* -----------------------RESARECH---------------------- */
 
 #Research{
-    padding: 150px 0;
+    padding: -190% 0;
     padding-left: 190px;
 }
 
