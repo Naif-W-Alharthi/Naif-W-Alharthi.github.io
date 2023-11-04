@@ -3,15 +3,24 @@
     padding:0;
     font-family:'Poppins',sans-serif;
     box-sizing:border-box;
+    
+
+ 
+    
 }
+
 body{
     /* background: #87878b; */
     position: absolute;
     /* aspect-ratio: 900 / 300; */
     /* background-size: 100%; */
     background-image: url(./svg/bb500by500.svg);
-    background-size: cover;
+    /* background-size: cover; */
     background-repeat: repeat-y;
+    background-size: 100vh 117vw;
+    background-position: center;
+  
+    /* transform: translatex(50vw); */
     /* background-position: center; */
     color: #f5f3f3;
 }
@@ -317,28 +326,58 @@ nav ul li a{
     border-radius: 15px;
  }
  /* ------------------Work experience----------------- */
- #services{
+ /* #services{ */
     /* margin-left: 20vw; */
- }
+ /* } */
  .services-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    display: flex;
+    flex-wrap: wrap;
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fit,minmax(900px,900px)); */
     margin-top: 50px;
-    grid-gap: 100px;
+    /* row-gap: 90vw; */
+    /* grid-gap: 1500px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* row-gap: 90vw; */
+    
  }
+ @media (min-width:900px) {
 .services-list div{
+    
     background-color: rgba(0, 0, 0, 0.678);
-    width: 300px;
-    height: 300px;
-    padding: 50px;
-    font-size: 18px;
+    width: 20vw;
+    height: 30vh;
+    padding: 4vh;
+    font-size: 300%;
     font-weight: 400;
     border-radius: 10px;
     border-right: 10px;
+    /* flex */
     transition: background 0.5s, transform 0.5s;
+    
 }
+ }
+
+    .services-list div{
+        
+        background-color: rgba(0, 0, 0, 0.678);
+        width: 50vw;
+        height: 30vh;
+        padding: 4vh;
+        font-size: 250%;
+        font-weight: 500;
+        border-radius: 20px;
+        border-right: 10px;
+        /* flex */
+        transition: background 0.5s, transform 0.5s;
+        
+    }
+  
+
 .services-list div h2{
-    font-size: 30px;
+    font-size: 150%;
     font-weight: 500;
     margin-bottom: 20px;
 }
@@ -368,46 +407,85 @@ nav ul li a{
     width: 60vw;
     height: 30vh;
     padding: 50px;
-    font-size: 190%;
+    font-size: 250%;
     font-weight: 400;
     border-radius: 90%;
     border-right: 50%;
     display: inline-block;
+    /* float: left; */
     /* transition: background 0.5s, transform 0.5s; */
  
 }
+@media (min-width:900px) {
+.Education-list div{
+    /* background-color: rgb(0, 0, 0); */
+    width: 60vw;
+    height: 30vh;
+    padding: 50px;
+    font-size: 300%;
+    font-weight: 400;
+    border-radius: 90%;
+    border-right: 50%;
+    display: inline-block;
+
+    /* transition: background 0.5s, transform 0.5s; */
+ 
+}
+}
 .Education-list div img{
     
-    /* display: inline-block; */
+    display: inline-block;
     filter: brightness(100%);
     /* mix-blend-mode: multiply; */
-    height: 80%;
-    width: 80%;
+    width: 29vw;
+    height: 20vh;
     margin: 0px 40px;
-    float: left;
+    /* float: left; */
+    
     filter: brightness(100%);
  }
+
+ @media (min-width:900px) {
+    .Education-list div img{
+        position: relative;
+        /* display: inline-block; */
+        filter: brightness(100%);
+        /* mix-blend-mode: multiply; */
+        width: 20vw;
+        height: 25vh;
+        margin: 0px 40px;
+        float: left;
+        filter: brightness(100%);
+     }
+    }
+
+    
 .Education-list div h2{
+    /* transform: translateX(35vw) translateY(-20vh); */
     font-size: 120%;
     font-weight: 500;
     margin-bottom: 10px;
     /* float: left; */
     text-align: center;
+    /* float: right; */
 }
 .Education-list div p{
+    /* transform: translateX(35vw) translateY(-20vh); */
     text-align: center;
     /* font-size: 30px; */
     font-weight: 500;
     margin-bottom: 10px;
     margin: 0px -170px;
+    
     /* float:none */
     /* float: left; */
 }
 .Education-list div p span{
+    position: relative;
     /* text-align: center; */
     /* font-size: 30px; */
     /* color: #5800cc; */
-    padding-right: 70px;
+    /* padding-right: 70px; */
     /* padding: 100px; */
    
  
