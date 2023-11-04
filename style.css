@@ -250,6 +250,12 @@ nav ul li a{
     
     
 }
+.about-container{
+    padding:  7%;
+    max-width: 100vw; /* Set the maximum width of the div */
+    /* margin: 10%; */
+    /* overflow:hidden */
+}
 .row{
     
     display: flex;
@@ -269,7 +275,16 @@ nav ul li a{
     flex-basis: 50%;
     
 }
-
+.about-col-2 p {
+    font-size: 150%;
+    font-weight: 600;
+    color: #fff;
+}
+.about-col-2 div p {
+    font-size: 110%;
+    font-weight: 600;
+    color: #030303;
+}
 .sub-title{
     font-size: 60px;
     font-weight: 600;
@@ -303,7 +318,7 @@ nav ul li a{
  }
  /* ------------------Work experience----------------- */
  #services{
-    padding: 150px 20px;
+    /* margin-left: 20vw; */
  }
  .services-list{
     display: grid;
@@ -335,29 +350,29 @@ nav ul li a{
 }
 /* ------------------Education----------------- */
 #Education{
-    padding: 100px 0;
+    padding: 0 -50vw;
   
  }
  .Education-list{
-    margin-left: -100px;
+    margin-left: -12vw;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(1fr,250px));
     margin-top: 50px;
-    grid-gap: 100px;
+    grid-gap: 50px;
     
 
  }
 
 .Education-list div{
     /* background-color: rgb(0, 0, 0); */
-    width: 1000px;
-    height: 300px;
+    width: 60vw;
+    height: 30vh;
     padding: 50px;
-    font-size: 18px;
+    font-size: 190%;
     font-weight: 400;
-    border-radius: 10px;
-    border-right: 10px;
-     display: inline-block;
+    border-radius: 90%;
+    border-right: 50%;
+    display: inline-block;
     /* transition: background 0.5s, transform 0.5s; */
  
 }
@@ -366,14 +381,14 @@ nav ul li a{
     /* display: inline-block; */
     filter: brightness(100%);
     /* mix-blend-mode: multiply; */
-    height: 90%;
-    width: 22%;
+    height: 80%;
+    width: 80%;
     margin: 0px 40px;
     float: left;
     filter: brightness(100%);
  }
 .Education-list div h2{
-    font-size: 30px;
+    font-size: 120%;
     font-weight: 500;
     margin-bottom: 10px;
     /* float: left; */
@@ -408,8 +423,8 @@ nav ul li a{
 /* -----------------------RESARECH---------------------- */
 
 #Research{
-    padding: -190% 0;
-    padding-left: 190px;
+    padding: 0 14vw;
+    /* padding-left: 190px; */
 }
 
 .container-research img{
