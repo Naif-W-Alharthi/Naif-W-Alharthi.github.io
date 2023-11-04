@@ -5,16 +5,16 @@
     box-sizing:border-box;
 }
 body{
-    background: rgb(135, 135, 139);
+    background: #87878b;
     color: #f5f3f3;
 }
 
 #header{
-    width: 100%;  /* size of the top row*/
+    width: 100vh;  /* size of the top row*/
     height: 100vh;
     /* overflow:hidden */
-    max-width: 100%; /* Set the maximum width of the div */
-    margin: 0 auto;
+    max-width: 100%; 
+    /* margin:  auto; */
     /* display: inline-block; */
     /* background-image: ; no background for now please */
     /* background-size: cover; */
@@ -23,7 +23,7 @@ body{
 .container{
     padding:  7%;
     max-width: 100%; /* Set the maximum width of the div */
-    margin: 0 auto;
+    margin: 10% auto;
     /* overflow:hidden */
 }
 /* .container-header{ */
