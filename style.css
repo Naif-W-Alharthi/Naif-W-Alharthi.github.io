@@ -10,6 +10,7 @@
 
 @media (max-width:1000px) {
 body{
+    
     /* background: #87878b; */
     position: absolute;
     /* aspect-ratio: 900 / 300; */
@@ -17,12 +18,13 @@ body{
     background-image: url(./svg/background.svg);
     /* background-size: cover; */
     background-repeat: repeat-y;
-    background-size: 130vw 130vw;
+    background-size: auto 190vw;
     background-position: center;
   
     /* transform: translatex(50vw); */
     /* background-position: center; */
     color: #ffffff;
+    
     
 }
 }
@@ -283,7 +285,7 @@ nav ul li{
     flex-shrink: 0;
     padding: 1% 0;
     color:rgb(0, 0, 0);
-    
+    padding-top: 10vh;
     
 }
 .about-container{
@@ -371,30 +373,30 @@ nav ul li{
     /* row-gap: 90vw; */
     
  }
- @media (min-width:900px) {
+ @media (max-width:2000px) {
 .services-list div{
     
-    background-color: rgba(0, 0, 0, 0.678);
+    background-color: rgba(0, 0, 0, 0.292);
     width: 20vw;
-    height: 30vh;
-    padding: 4vh;
-    font-size: 300%;
-    font-weight: 400;
-    border-radius: 10px;
+    height: 20vw;
+    padding: 4vw;
+    font-size: 2vw;
+    font-weight: 500;
+    border-radius: 20px;
     border-right: 10px;
     /* flex */
     transition: background 0.5s, transform 0.5s;
     
 }
  }
-
+ @media (min-width:2000px) {
     .services-list div{
         
-        background-color: rgba(0, 0, 0, 0.493);
+        background-color: rgba(0, 0, 0, 0.293);
         width: 20vw;
-        height: 30vh;
-        padding: 4vh;
-        font-size: 250%;
+        height: 20vw;
+        padding: 4vw;
+        font-size:  1.5vw;
         font-weight: 500;
         border-radius: 20px;
         border-right: 10px;
@@ -402,7 +404,9 @@ nav ul li{
         transition: background 0.5s, transform 0.5s;
         
     }
-  
+}
+
+
 
 .services-list div h2{
     font-size: 150%;
